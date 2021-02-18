@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import {getDog} from '../actions/actions.js';
+import DogImage from './DogImage';
 
 const Dogs = (props) => {
     const {dogs, isGetting, error} = props;
@@ -12,7 +13,7 @@ const Dogs = (props) => {
 
     useEffect(() => {
         props.getDog();
-    }, []);
+    }, [] );
 
     if(error) {
         return <h3>Something went wrong, please try again!</h3>
@@ -26,7 +27,7 @@ const Dogs = (props) => {
         <div>
             <h2>Dog Lovers: {dogs}</h2>
             <button onClick={handelButton}>Dog Images</button>
-            {/* <img className='Dog' src= alt='random dog' /> */}
+            <img className='Dog' src={props.DogImage} alt='random dog' />
         </div>
     )
 };
