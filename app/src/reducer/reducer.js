@@ -1,7 +1,7 @@
 import {FETCH_DOG_START, FETCH_DOG_SUCCESS, FETCH_DOG_FAIL} from '../actions/actions.js';
 
 const initialState = {
-    dogs: [],
+    dogs: "",
     isGetting: false,
     error: ''
 };

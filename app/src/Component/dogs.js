@@ -27,7 +27,7 @@ const Dogs = (props) => {
         <div>
             <h2>Dog Lovers: {dogs}</h2>
             <button onClick={handelButton}>Dog Images</button>
-            <img className='Dog' src={props.DogImage} alt='random dog' />
+            <DogImage className='Dog' dogurl={props.dogs}/>
         </div>
     )
 };

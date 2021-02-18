@@ -3,9 +3,9 @@ import React from 'react';
 const DogImage = (props) => {
     return (
         <div>
-            {props.item.map((dogs) => {
-                return <img className='DogImage' src={dogs} alt='random dog'/>
-            })}
+            
+                <img className='DogImage' src={props.dogurl} alt='random dog'/>
+            
         </div>
     )
 }
